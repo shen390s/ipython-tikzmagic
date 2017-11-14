@@ -102,7 +102,7 @@ class TikzMagics(Magics):
 
 
     def _run_latex(self, code, encoding, dir):
-        f = open(dir + '/tikz.tex', 'w', encoding=encoding)
+        f = open(dir + '/tikz.tex', 'w')
         f.write(code)
         f.close()
 
